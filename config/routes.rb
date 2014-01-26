@@ -1,13 +1,21 @@
 Bloog::Application.routes.draw do
-  get "articles/index"
 
-  get "articles/new"
+resources :articles
 
-  get "articles/show"
+=begin
+  #get "articles/index"
 
-  get "articles/edit"
+  #get "articles/new"
+
+  #get "articles/show"
+
+  #get "articles/edit"
+
+=end
   
 root :to => "articles#new"
+match "my_new_article" => "articles#create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

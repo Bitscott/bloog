@@ -24,8 +24,8 @@ gem 'jquery-rails'
 #for the productin configuration in HEROKU
 group :production do
 
- gem 'thin'
- gem 'pg'
+ #gem 'thin'
+ #gem 'pg'
 
 end
 
