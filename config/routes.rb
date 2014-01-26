@@ -13,7 +13,7 @@ resources :articles
 
 =end
   
-root :to => "articles#new"
+root :to => "articles#index"
 match "my_new_article" => "articles#create"
 
   # The priority is based upon order of creation:

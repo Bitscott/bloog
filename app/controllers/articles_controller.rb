@@ -20,7 +20,17 @@ class ArticlesController < ApplicationController
 
 def create
 
-  @article = Article.find(params[:article])
+  @article = Article.create(params[:article])
+
+  if @article.save
+   
+  redirect_to root_path
+
+  else
+ 
+  render 'new'
+
+  end
 
 end
 
