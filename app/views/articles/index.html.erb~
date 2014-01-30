@@ -2,7 +2,7 @@
 
 <% @articles.each do |a| %>
 <%= a.id %>
-<%= link_to a.title, article_path(a.id) %>
+<%= link_to a.title, article_path(a) %>
 <%= a.body %>
  <br/>
 <% end %>

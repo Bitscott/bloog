@@ -3,8 +3,8 @@
  Body:  <%= @article.body %>
 <% a = 0 %>
  <% @comments.each  do |comment|
-
-<%= a = a.next %>
+<% #@comment.size %>
+<% a = a.next %>
 
   <%= comment.content %>
 <%= comment.id %>
